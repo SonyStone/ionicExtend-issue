@@ -5,6 +5,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ExtendedItem } from './extended-item';
 import { CopyItem } from './copy-item';
 
+// import { BasePanelComponent } from './base-panel.component';
+import { MyPanelComponent } from './my-panel.component';
 
 @NgModule({
 	imports: [
@@ -14,10 +16,14 @@ import { CopyItem } from './copy-item';
 	exports: [
 		ExtendedItem,
 		CopyItem,
+		// BasePanelComponent,
+		MyPanelComponent,
 	],
 	declarations: [
 		ExtendedItem,
 		CopyItem,
+		// BasePanelComponent,
+		MyPanelComponent,
 	],
 })
 export class IonicExtensionModule { }

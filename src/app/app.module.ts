@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { OtherModule } from '../other-module';
 import { IonicExtensionModule } from '../ionic-extension';
 
 @NgModule({
@@ -13,7 +14,8 @@ import { IonicExtensionModule } from '../ionic-extension';
   ],
   imports: [
     IonicModule.forRoot(MyApp),
-    IonicExtensionModule
+    IonicExtensionModule,
+    OtherModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [

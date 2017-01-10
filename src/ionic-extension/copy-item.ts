@@ -4,22 +4,9 @@ import { Button, Config, Form, Icon, Ion, Label, ItemReorder } from 'ionic-angul
 
 @Component({
 	selector: 'copy-ion-item',
-	template:
-		'<ng-content select="[item-left],ion-checkbox:not([item-right])"></ng-content>' +
-		'<div class="item-inner">' +
-			'<div class="input-wrapper">' +
-				'<ng-content select="ion-label"></ng-content>' +
-				'<ion-label *ngIf="_viewLabel">' +
-					'<ng-content></ng-content>' +
-				'</ion-label>' +
-				'<ng-content select="ion-select,ion-input,ion-textarea,ion-datetime,ion-range,[item-content]"></ng-content>' +
-			'</div>' +
-			'<ng-content select="[item-right],ion-radio,ion-toggle"></ng-content>' +
-			'<ion-reorder *ngIf="_shouldHaveReorder"></ion-reorder>' +
-		'</div>' +
-		'<div class="button-effect"></div>',
+	templateUrl: './extended-item.html',
 	host: {
-		'class': 'item'
+		'class': 'item item-block'
 	},
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	encapsulation: ViewEncapsulation.None,
